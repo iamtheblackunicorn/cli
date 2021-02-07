@@ -29,7 +29,9 @@ licensed under the MIT license
 
 import 'package:cli/cli.dart';
 
-class TestApp extends CommandLineApp{
+// Inherits from the original class,
+// "CommandLineApp".
+class TestApp extends CommandLineApp {
   @override
   String appName = 'Test';
   @override
@@ -38,22 +40,24 @@ class TestApp extends CommandLineApp{
   String appAuthor = 'The Black Unicorn';
   @override
   String appLicense = 'MIT license';
+  @override
+  Map<String, dynamic> argumentsDataBase = {};
 }
 
-void greet(String name){
+// Function to execute when the option
+// is called.
+void greet(String name) {
   String greeting = 'Hello, $name!';
   print(greeting);
 }
 
-void main(List<String> arguments){
+// Main entry point for the Dart VM.
+void main(List<String> arguments) {
   TestApp myApp = TestApp();
   myApp.addArgument('--greet', 'greets the user with a specified name', true);
-  if(myApp.argumentWasUsed(arguments, '--greet') == true){
-    greet(myApp.getArgumentData(arguments,'--greet'));
+  if (myApp.argumentWasUsed(arguments, '--greet') == true) {
+    greet(myApp.getArgumentData(arguments, '--greet'));
   }
-  else {
-    print('Invalid options provided!\nTry the "--help" flag!');
-  }
-  myApp.runApp(arguments);
+  myApp.runApp(arguments); // finally running the app
 }
 ```
