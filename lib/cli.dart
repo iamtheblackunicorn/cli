@@ -74,7 +74,7 @@ class CommandLineApp {
     String argumentData = '';
     for (int i = 0; i < arguments.length; i++) {
       if (arguments[i] == argument &&
-          this.argumentsDataBase[argument][2] == true) {
+          this.argumentsDataBase[argument][1] == true) {
         int dataIndex = i + 1;
         String argData = arguments[dataIndex];
         argumentData = argData;
