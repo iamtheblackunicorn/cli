@@ -1,6 +1,6 @@
 # CLI :computer:
 
-[![Build Status](https://travis-ci.com/iamtheblackunicorn/cli.svg?branch=master)](https://travis-ci.com/iamtheblackunicorn/cli)
+[![Build Status](https://travis-ci.com/iamtheblackunicorn/cli.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/cli)
 
 *Making the writing of command-line apps in Dart intuitive. :computer:*
 
@@ -80,6 +80,8 @@ This will only work if the `isActive` flag is `true`.
 ##### void runApp(List<String> arguments)
 This method runs the app!
 Batteries-included flags of `help`, `info`, and `version`.
+  
+## Example :calling:
 
 ## Note :scroll:
 
