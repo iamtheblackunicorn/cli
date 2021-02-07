@@ -14,6 +14,8 @@ class TestApp extends CommandLineApp{
   String appAuthor = 'The Black Unicorn';
   @override
   String appLicense = 'MIT license';
+  @override
+  Map<String,dynamic> argumentsDataBase = {};
 }
 
 void greet(String name){
