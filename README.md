@@ -124,7 +124,7 @@ void main(List<String> arguments) {
   }
   myApp.runApp(arguments); // finally running the app
 }
-
+```
 
 ## Note :scroll:
 
