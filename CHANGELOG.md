@@ -5,3 +5,9 @@
 - initial release
 - upload to GitHub
 - upload to Pub.dev
+
+## Version 1.0.1: The Finesse update
+
+- updated docs
+- updated CI badge
+- added an example to the `README`
