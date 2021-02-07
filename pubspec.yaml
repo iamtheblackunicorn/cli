@@ -1,4 +1,4 @@
-name: cli
+name: cli # package name
 description: A tiny library to make the writing of command-line apps intuitive.
 version: 1.0.0
 homepage: https://github.com/iamtheblackunicorn/cli
