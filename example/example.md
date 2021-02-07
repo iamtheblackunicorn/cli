@@ -13,7 +13,7 @@ homepage: https://github.com/iamtheblackunicorn/cli
 environment:
   sdk: '>=2.10.0 <3.0.0'
 dependencies:
-  cli:
+  clibu:
     git: git://github.com/iamtheblackunicorn/cli.git
 ```
 
@@ -27,7 +27,7 @@ CLI by Alexander Abraham a.k.a. The Black Unicorn
 licensed under the MIT license
 */
 
-import 'package:cli/cli.dart';
+import 'package:clibu/cli.dart';
 
 // Inherits from the original class,
 // "CommandLineApp".

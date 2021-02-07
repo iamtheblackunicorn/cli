@@ -5,5 +5,5 @@ homepage: https://github.com/iamtheblackunicorn/cli
 environment:
   sdk: '>=2.10.0 <3.0.0'
 dependencies:
-  cli:
+  clibu:
     git: git://github.com/iamtheblackunicorn/cli.git

@@ -3,7 +3,7 @@ CLI by Alexander Abraham a.k.a. The Black Unicorn
 licensed under the MIT license
 */
 
-import 'package:cli/cli.dart';
+import 'package:clibu/cli.dart';
 
 // Inherits from the original class,
 // "CommandLineApp".

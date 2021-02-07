@@ -19,7 +19,7 @@ To add *CLI* to your project's dependencies, add this line to your project's `pu
 ```YAML
 depdencies:
   ...
-  cli:
+  clibu:
     git: git://github.com/iamtheblackunicorn/cli.git
 ```
 
@@ -28,7 +28,7 @@ depdencies:
 ```YAML
 depdencies:
   ...
-  cli: ^1.0.0
+  clibu: ^1.0.0
 ```
 
 The three dots represent anything else that you might have in the `dependencies` section. Having done that, re-fetch your project's dependencies by running this in the project's root directory:
@@ -44,7 +44,7 @@ $ dart pub get
 Import the main command-line API like this:
 
 ```dart
-import 'package:cli/cli.dart';
+import 'package:clibu/cli.dart';
 ```
 
 ### API
