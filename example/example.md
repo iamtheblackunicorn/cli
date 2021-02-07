@@ -15,9 +15,6 @@ environment:
 dependencies:
   cli:
     git: git://github.com/iamtheblackunicorn/cli.git
-dev_dependencies:
-  cli:
-    git: git://github.com/iamtheblackunicorn/cli.git
 ```
 
 ## Example app
