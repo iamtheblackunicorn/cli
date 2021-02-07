@@ -5,7 +5,7 @@ licensed under the MIT license
 
 import 'package:cli/cli.dart';
 
-class TestApp extends CommandLineApp{
+class TestApp extends CommandLineApp {
   @override
   String appName = 'Test';
   @override
@@ -15,21 +15,20 @@ class TestApp extends CommandLineApp{
   @override
   String appLicense = 'MIT license';
   @override
-  Map<String,dynamic> argumentsDataBase = {};
+  Map<String, dynamic> argumentsDataBase = {};
 }
 
-void greet(String name){
+void greet(String name) {
   String greeting = 'Hello, $name!';
   print(greeting);
 }
 
-void main(List<String> arguments){
+void main(List<String> arguments) {
   TestApp myApp = TestApp();
   myApp.addArgument('--greet', 'greets the user with a specified name', true);
-  if(myApp.argumentWasUsed(arguments, '--greet') == true){
-    greet(myApp.getArgumentData(arguments,'--greet'));
-  }
-  else {
+  if (myApp.argumentWasUsed(arguments, '--greet') == true) {
+    greet(myApp.getArgumentData(arguments, '--greet'));
+  } else {
     print('Invalid options provided!\nTry the "--help" flag!');
   }
   myApp.runApp(arguments);
