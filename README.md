@@ -44,7 +44,7 @@ $ dart pub get
 Import the main command-line API like this:
 
 ```dart
-import 'package:clibu/cli.dart';
+import 'package:clibu/clibu.dart';
 ```
 
 ### API
