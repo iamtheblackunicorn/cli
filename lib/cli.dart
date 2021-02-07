@@ -23,9 +23,9 @@ class CommandLineApp {
   /// is invoked with "help", "--help", or "-h".
   void appHelpMessage() {
     print('\n');
-    for (String arg in argumentsDataBase.values) {
+    for (String arg in this.argumentsDataBase.keys) {
       String argumentName = arg;
-      String argumentHelpHint = this.argumentsDataBase[arg];
+      String argumentHelpHint = this.argumentsDataBase[arg][0];
       String spaces = '  ';
       String message = '$argumentName$spaces$argumentHelpHint';
       print(message);
@@ -87,18 +87,47 @@ class CommandLineApp {
   /// This method runs the app!
   /// Batteries-included flags of "help", "info", and "version".
   void runApp(List<String> arguments) {
-    if (arguments[1] == 'help' ||
-        arguments[1] == '--help' ||
-        arguments[1] == '-h') {
+    if (arguments[0] == 'help' ||
+        arguments[0] == '--help' ||
+        arguments[0] == '-h') {
       this.appHelpMessage();
-    } else if (arguments[1] == 'info' ||
-        arguments[1] == '--info' ||
-        arguments[1] == '-i') {
+    } else if (arguments[0] == 'info' ||
+        arguments[0] == '--info' ||
+        arguments[0] == '-i') {
       this.appInfoMessage();
-    } else if (arguments[1] == 'version' ||
-        arguments[1] == '--version' ||
-        arguments[1] == '-v') {
+    } else if (arguments[0] == 'version' ||
+        arguments[0] == '--version' ||
+        arguments[0] == '-v') {
       this.appVersionMessage();
     }
   }
+}
+
+class TestApp extends CommandLineApp {
+  @override
+  String appName = 'Test';
+  @override
+  String appVersion = '1.0';
+  @override
+  String appAuthor = 'The Black Unicorn';
+  @override
+  String appLicense = 'MIT license';
+  @override
+  Map<String, dynamic> argumentsDataBase = {};
+}
+
+void greet(String name) {
+  String greeting = 'Hello, $name!';
+  print(greeting);
+}
+
+void main(List<String> arguments) {
+  TestApp myApp = TestApp();
+  myApp.addArgument('--greet', 'greets the user with a specified name', true);
+  if (myApp.argumentWasUsed(arguments, '--greet') == true) {
+    greet(myApp.getArgumentData(arguments, '--greet'));
+  } else {
+    print('Invalid options provided!\nTry the "--help" flag!');
+  }
+  myApp.runApp(arguments);
 }
