@@ -5,4 +5,4 @@ script:
   - "dart analyze"
   - "cd example"
   - "cd lib"
-  - "dart main.dart --greet Alex"
+  - "dart main.dart --greet Alex" # actually tests the test program!
