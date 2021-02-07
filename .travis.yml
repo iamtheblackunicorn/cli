@@ -1,0 +1,4 @@
+language:
+  - "dart"
+script:
+  - "dart pub get && dart analyze && cd example && dart pub get && mkdir bin && cp -f lib/main.dart bin/example.dart && dart run"
