@@ -1,5 +1,7 @@
 # CLI :computer:
 
+[![Build Status](https://travis-ci.com/iamtheblackunicorn/cli.svg?branch=master)](https://travis-ci.com/iamtheblackunicorn/cli)
+
 *Making the writing of command-line apps in Dart intuitive. :computer:*
 
 ## About :books:
