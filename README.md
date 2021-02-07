@@ -1,5 +1,7 @@
 # CLI :computer:
 
+*Making the writing of command-line apps in Dart intuitive. :computer:*
+
 ## About :books:
 
 Some time ago, I wanted to make a command-line tool in Dart. This is when I noticed that I didn't have a clue about how to make a responsive and "classic" command-line app. *CLI* covers this need. it allows you to make command-line apps in the way you are used to from GNU programs. Flags like `--help` or `--version` are provided out of the box.
