@@ -1,7 +1,7 @@
 language:
   - "dart"
 script:
-  - "dart pub get ""
+  - "dart pub get"
   - "dart analyze"
   - "cd example"
   - "cd lib"
