@@ -28,7 +28,7 @@ depdencies:
 ```YAML
 depdencies:
   ...
-  clibu: ^1.1.1
+  clibu: ^1.1.2
 ```
 
 The three dots represent anything else that you might have in the `dependencies` section. Having done that, re-fetch your project's dependencies by running this in the project's root directory:
