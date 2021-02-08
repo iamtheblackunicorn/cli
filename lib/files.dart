@@ -57,7 +57,6 @@ bool fileExists(String filePath) {
 /// A function to test all of the file functions.
 void testFileFunctions() {
   String shellCommand = 'touch test.json';
-  String removeCommand = 'rm -rf test.json';
   print('Test for the method "runCommand"!');
   runCommand(shellCommand);
 
