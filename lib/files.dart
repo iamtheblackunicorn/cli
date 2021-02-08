@@ -20,7 +20,7 @@ void runCommand(String shellCommand) {
 
 /// Returns the contents of a file as a string.
 String getFileContents(String filePath) {
-  var fileContents = new File(filePath).readAsStringSync();
+  var fileContents = File(filePath).readAsStringSync();
   return fileContents;
 }
 
@@ -38,7 +38,7 @@ String mapToJSON(Map<String, dynamic> jsonData) {
 
 /// Writes a string to a file.
 void writeToFile(String filePath, String fileContents) {
-  final File file = new File(filePath);
+  final File file = File(filePath);
   file.writeAsStringSync(fileContents);
 }
 
