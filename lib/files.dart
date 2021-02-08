@@ -46,7 +46,7 @@ void writeToFile(String filePath, String fileContents) {
 bool fileExists(String filePath) {
   bool result = false;
   try {
-    new File(filePath).readAsStringSync();
+    File(filePath).readAsStringSync();
     result = true;
   } catch (e) {
     result = false;
