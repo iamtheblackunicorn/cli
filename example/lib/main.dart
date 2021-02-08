@@ -35,8 +35,7 @@ void main(List<String> arguments) {
   myApp.addArgument('--test', 'runs a test routine', false);
   if (myApp.argumentWasUsed(arguments, '--greet') == true) {
     greet(myApp.getArgumentData(arguments, '--greet'));
-  }
-  else if (myApp.argumentWasUsed(arguments, '--test') == true) {
+  } else if (myApp.argumentWasUsed(arguments, '--test') == true) {
     testFileFunctions();
   }
   myApp.runApp(arguments); // finally running the app

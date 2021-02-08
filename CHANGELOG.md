@@ -14,6 +14,6 @@
 
 ## Version 1.1.0: The Files update
 
-- added an API for files
+- added an API for working with files
 - added some more docs
 - minor fixes
