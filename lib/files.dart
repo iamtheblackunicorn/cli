@@ -79,6 +79,4 @@ void testFileFunctions() {
 
   print('Test for the method "fileExists"!');
   print(fileExists('test.json'));
-  runCommand(removeCommand);
-  print(fileExists('test.json'));
 }
