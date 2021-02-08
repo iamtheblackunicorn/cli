@@ -2,3 +2,4 @@ language:
   - "dart"
 script:
  - "make"
+ - "make test"
