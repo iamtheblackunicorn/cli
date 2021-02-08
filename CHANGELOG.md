@@ -22,3 +22,9 @@
 
 - added some more docs
 - minor fixes
+
+## Version 1.1.2: The Files update III
+
+- minor fixes
+- code clean-up
+- more documentation
