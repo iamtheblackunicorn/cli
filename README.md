@@ -28,7 +28,7 @@ depdencies:
 ```YAML
 depdencies:
   ...
-  clibu: ^1.0.1
+  clibu: ^1.1.0
 ```
 
 The three dots represent anything else that you might have in the `dependencies` section. Having done that, re-fetch your project's dependencies by running this in the project's root directory:
@@ -41,46 +41,78 @@ $ dart pub get
 
 ### Importing
 
-Import the main command-line API like this:
+Import the command-line API like this:
 
 ```dart
 import 'package:clibu/clibu.dart';
 ```
 
+Import the API for files like this:
+
+```dart
+import 'package:clibu/files.dart';
+```
+
 ### API
 
-#### class CommandLineApp
+#### COMMAND-LINE API
+
+##### class CommandLineApp
 Key command-line app class. The entire app lives in this class.
 
-##### void addArgument(String argumentName, String helpMessage, bool isActive)
+###### void addArgument(String argumentName, String helpMessage, bool isActive)
 Adds an argument to your app!
 
-##### void appHelpMessage()
+###### void appHelpMessage()
 "Batteries-included" app help text!
 Prints help info about the app when the app
 is invoked with `help`, `--help`, or `-h`.
 
-##### void appInfoMessage()
+###### void appInfoMessage()
 "Batteries-included" app info text!
 Prints info about the app when the app
 is invoked with `info`, `--info`, or `-i`.
 
-##### void appVersionMessage()
+###### void appVersionMessage()
 "Batteries-included" app version text!
 Prints version info about the app when the app
 is invoked with `version`, `--version`, or `-v`.
 
-##### bool argumentWasUsed(List<String> arguments, String argument)
+###### bool argumentWasUsed(List<String> arguments, String argument)
 User method to check if an argument was used!
 
-##### String getArgumentData(List<String> arguments, String argument)
+###### String getArgumentData(List<String> arguments, String argument)
 User method to fetch the data of an argument!
 This will only work if the `isActive` flag is `true`.
 
-##### void runApp(List<String> arguments)
+###### void runApp(List<String> arguments)
 This method runs the app!
 Batteries-included flags of `help`, `info`, and `version`.
-  
+
+#### FILES API
+
+##### void runCommand(String shellCommand)
+Runs a shell command and prints the output from `STDERR` and `STDOUT`.
+
+##### String getFileContents(String filePath)
+Returns the contents of a file as a string.
+
+##### Map<String,dynamic> getJSONMap(String jsonString)
+Returns a JSON string as a map.
+
+##### String mapToJSON(Map<String,dynamic> jsonData)
+Converts a Dart Map to a JSON string.
+
+##### void writeToFile(String filePath, String fileContents)
+Writes a string to a file.
+
+##### bool fileExists(String filePath)
+Checks whether a file exists.
+
+
+##### void testFileFunctions()
+A function to test all of the file functions.
+
 ## Example :calling:
 
 This is what a minimal example using *CLI Black Unicorn* would look like.

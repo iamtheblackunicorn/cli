@@ -1,5 +1,5 @@
 /*
-CLI by Alexander Abraham a.k.a. The Black Unicorn
+CLI COMMAND-LINE API by Alexander Abraham a.k.a. The Black Unicorn
 licensed under the MIT license
 */
 

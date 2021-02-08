@@ -11,3 +11,9 @@
 - updated docs
 - updated CI badge
 - added an example to the `README`
+
+## Version 1.1.0: The Files update
+
+- added an API for files
+- added some more docs
+- minor fixes
