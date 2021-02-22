@@ -3,8 +3,6 @@
 ## Example `pubspec.yaml`
 
 Here is the example's `pubspec.yaml`:
-
-Here is the example's `pubspec.yaml`:
 ```YAML
 name: test
 description: A test app for CLI!
