@@ -7,6 +7,7 @@ Here is the example's `pubspec.yaml`:
 name: test
 description: A test app for CLI!
 version: 1.0.0
+publish_to: none
 homepage: https://github.com/iamtheblackunicorn/cli
 environment:
   sdk: '>=2.12.0 <3.0.0'

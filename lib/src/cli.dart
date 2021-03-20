@@ -6,10 +6,10 @@ licensed under the MIT license
 /// Key command-line app class.
 /// The entire app lives in this class.
 class CommandLineApp {
-  String appName;
-  String appVersion;
-  String appAuthor;
-  String appLicense;
+  String? appName;
+  String? appVersion;
+  String? appAuthor;
+  String? appLicense;
   Map<String, dynamic> argumentsDataBase;
 
   /// Adds an argument to your app!
