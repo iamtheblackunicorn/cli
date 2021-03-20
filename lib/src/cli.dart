@@ -6,11 +6,11 @@ licensed under the MIT license
 /// Key command-line app class.
 /// The entire app lives in this class.
 class CommandLineApp {
-  String? appName;
-  String? appVersion;
-  String? appAuthor;
-  String? appLicense;
-  Map<String, dynamic> argumentsDataBase;
+  late final String appName;
+  late final String appVersion;
+  late final String appAuthor;
+  late final String appLicense;
+  late final Map<String, dynamic> argumentsDataBase;
 
   /// Adds an argument to your app!
   void addArgument(String argumentName, String helpMessage, bool isActive) {
