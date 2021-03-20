@@ -28,7 +28,7 @@ depdencies:
 ```YAML
 depdencies:
   ...
-  clibu: ^1.1.2
+  clibu: ^1.2.0-nullsafety.0
 ```
 
 The three dots represent anything else that you might have in the `dependencies` section. Having done that, re-fetch your project's dependencies by running this in the project's root directory:
@@ -41,16 +41,10 @@ $ dart pub get
 
 ### Importing
 
-Import the command-line API like this:
+Import the API like this:
 
 ```dart
 import 'package:clibu/clibu.dart';
-```
-
-Import the API for files like this:
-
-```dart
-import 'package:clibu/files.dart';
 ```
 
 ### API

@@ -4,7 +4,6 @@ licensed under the MIT license
 */
 
 import 'package:clibu/clibu.dart';
-import 'package:clibu/files.dart';
 
 // Inherits from the original class,
 // "CommandLineApp".

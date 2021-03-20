@@ -28,3 +28,9 @@
 - minor fixes
 - code clean-up
 - more documentation
+
+## Version 1.2.0-nullsafety.0: Null Safety
+
+- package is now null safe
+- minor fixes
+- optimization

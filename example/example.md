@@ -9,7 +9,7 @@ description: A test app for CLI!
 version: 1.0.0
 homepage: https://github.com/iamtheblackunicorn/cli
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 dependencies:
   clibu:
     git: git://github.com/iamtheblackunicorn/cli.git
