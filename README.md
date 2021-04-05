@@ -53,7 +53,7 @@ This is what a minimal example using *CLI Black Unicorn* would look like.
 
 ```dart
 /*
-CLI by Alexander Abraham a.k.a. The Black Unicorn
+CLI Black Unicorn by Alexander Abraham a.k.a. The Black Unicorn
 licensed under the MIT license
 */
 
@@ -94,5 +94,5 @@ void main(List<String> arguments) {
 
 ## Note :scroll:
 
-- *CLI* by Alexander Abraham a.k.a. *The Black Unicorn*
+- *CLI Black Unicorn* :computer: by Alexander Abraham a.k.a. *The Black Unicorn*
 - licensed under the MIT license
