@@ -34,3 +34,8 @@
 - package is now null safe
 - minor fixes
 - optimization
+
+## Version 1.3.0-nullsafety.0: Milestone update
+
+- updated docs
+- minor fixes
