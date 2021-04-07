@@ -9,13 +9,17 @@ import 'dart:convert';
 /// Runs a shell command and prints the output
 /// from STDERR and STDOUT.
 void runCommand(String shellCommand) {
-  List<String> shellItems = shellCommand.split(' ');
-  String initItem = shellItems[0];
-  shellItems.removeAt(0);
-  Process.run(initItem, shellItems).then((result) {
-    stdout.write(result.stdout);
-    stderr.write(result.stderr);
-  });
+  try {
+    List<String> shellItems = shellCommand.split(' ');
+    String initItem = shellItems[0];
+    shellItems.removeAt(0);
+    Process.run(initItem, shellItems).then((result) {
+      stdout.write(result.stdout);
+      stderr.write(result.stderr);
+    });
+  } catch (e) {
+    print(e);
+  }
 }
 
 /// Returns the contents of a file as a string.
