@@ -39,3 +39,7 @@
 
 - updated docs
 - minor fixes
+
+## Version 1.4.0: Milestone Release Update
+
+- no longer pre-release
