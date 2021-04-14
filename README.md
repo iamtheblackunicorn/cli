@@ -94,5 +94,6 @@ void main(List<String> arguments) {
 
 ## Note :scroll:
 
-- *CLI Black Unicorn* :computer: by Alexander Abraham a.k.a. *The Black Unicorn*
-- licensed under the MIT license
+- *CLI :computer:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
+- Licensed under the MIT license.
+
