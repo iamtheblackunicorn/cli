@@ -16,5 +16,5 @@ jobs:
         run: dart format --output=none --set-exit-if-changed .
       - name: Analyze project source
         run: dart analyze
-      - name: Run tests
+      - name: Test routines
         run: make && make test
