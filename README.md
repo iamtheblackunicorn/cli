@@ -1,6 +1,6 @@
 # CLI :computer:
 
-[![Build Status](https://travis-ci.com/iamtheblackunicorn/cli.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/cli)
+[![GitHub CI](https://github.com/iamtheblackunicorn/cli/actions/workflows/dart.yml/badge.svg)](https://github.com/iamtheblackunicorn/cli/actions)
 
 *Making the writing of command-line apps in Dart intuitive. :computer:*
 
