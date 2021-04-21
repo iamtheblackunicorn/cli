@@ -36,6 +36,7 @@ void main(List<String> arguments) {
     greet(myApp.getArgumentData(arguments, '--greet'));
   } else if (myApp.argumentWasUsed(arguments, '--test') == true) {
     testFileFunctions();
+    testRegex();
   }
   myApp.runApp(arguments); // finally running the app
 }
