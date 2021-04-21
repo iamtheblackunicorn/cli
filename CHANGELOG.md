@@ -43,3 +43,7 @@
 ## Version 1.4.0: Milestone Release Update
 
 - no longer pre-release
+
+## Version 1.5.0: The Regex Update
+
+- added an API to easily get substrings from a regular expression and string
